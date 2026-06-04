@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { createRoot } from "react-dom/client";
 
 const useW = () => {
   const [w, setW] = useState(window.innerWidth);
@@ -1604,4 +1605,11 @@ export default function App() {
   if (!user) return <Login onLogin={setUser} />;
   if (user.role === "admin") return <AppAdmin onLogout={() => setUser(null)} />;
   return <AppCliente user={user} onLogout={() => setUser(null)} />;
+}
+
+// Bootstrap
+const container = document.getElementById("root");
+if (container && !container._reactRoot) {
+  container._reactRoot = true;
+  createRoot(container).render(<App />);
 }
