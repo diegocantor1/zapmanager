@@ -1,0 +1,43 @@
+{
+  "name": "ZapManager",
+  "short_name": "ZapManager",
+  "description": "Gestão inteligente com IA para o seu negócio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060a10",
+  "theme_color": "#22d3ee",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "lang": "pt-BR",
+  "shortcuts": [
+    {
+      "name": "Cobranças",
+      "url": "/?aba=cobranca",
+      "description": "Disparar cobranças via WhatsApp"
+    },
+    {
+      "name": "Orçamentos",
+      "url": "/?aba=orcamentos",
+      "description": "Ver orçamentos e propostas"
+    },
+    {
+      "name": "Retornos",
+      "url": "/?aba=retornos",
+      "description": "Follow-ups pendentes"
+    }
+  ]
+}
