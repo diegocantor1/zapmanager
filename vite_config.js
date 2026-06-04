@@ -5,6 +5,12 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
-    chunkSizeWarningLimit: 2000,
+    chunkSizeWarningLimit: 3000,
+    rollupOptions: {
+      input: 'index.html'
+    }
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom']
   }
 })
