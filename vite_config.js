@@ -6,8 +6,9 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     chunkSizeWarningLimit: 3000,
-  },
-  resolve: {
-    extensions: ['.jsx', '.js']
+    rollupOptions: {
+      input: { main: 'index.html' }
+    }
   }
 })
+
