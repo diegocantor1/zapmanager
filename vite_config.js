@@ -6,11 +6,8 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     chunkSizeWarningLimit: 3000,
-    rollupOptions: {
-      input: 'index.html'
-    }
   },
-  optimizeDeps: {
-    include: ['react', 'react-dom']
+  resolve: {
+    extensions: ['.jsx', '.js']
   }
 })
